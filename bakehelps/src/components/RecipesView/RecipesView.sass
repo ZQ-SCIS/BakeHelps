@@ -1,0 +1,95 @@
+@import '@/assets/sass/global.sass'
+
+.recipes-view
+    width: 80%
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 80px
+
+.filter-btns
+    width: 70%
+    margin-left: auto
+    margin-right: auto
+
+#filters
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+    background-color: white
+    border: 1px solid $main
+    border-radius: 10px
+    padding: 20px
+    font-size: 14px
+
+.advFilter-btn
+    background-color: transparent
+    border: 0
+    color: $active                          // #CC5500
+    font-weight: bold
+    font-size: 18px
+    padding: 0
+
+.reset-btn
+    background-color: transparent
+    border: 0
+    color: grey
+    font-size: 18px
+    text-decoration: underline
+    margin-left: 50px
+    &:hover
+        color: darkgrey
+
+.form-label
+    height: 35px
+    font-size: 16px
+
+#dropdownMenuButton1
+    max-width: 100%
+    font-size: 16px
+
+h1
+    font-weight: bold
+    text-align: center
+    color: $main                            // #5B2601
+    margin: 50px 0
+
+.btn-cooking-brown
+    padding: 10px 20px
+    margin-bottom: 10px
+    border: 1px solid $main                 // #5B2601
+
+.btn-brown
+    color: $bg !important                   // #FFFAED
+    background-color: $main !important      // #5B2601
+    border-radius: 25px
+    font-size: 18px
+    padding: 10px 20px
+    margin-top: 40px
+
+@media screen and ( max-width: 1280px )
+    .recipes-view
+        width: 85%
+        
+    .btn-cooking-brown
+        padding: 10px 5px
+    
+    h1
+        font-size: 2.5rem
+
+@media screen and ( max-width: 990px )
+    .recipes-view
+        margin-top: 40px
+
+    .btn-cooking-brown
+        padding: 10px 20px
+
+    .filter-btns, #filters
+        width: 70%
+
+@media screen and ( max-width: 767px )
+    .filter-btns, #filters
+        width: 90%
+
+@media screen and ( max-width: 325px )
+    .filter-btns, #filters
+        width: 100%

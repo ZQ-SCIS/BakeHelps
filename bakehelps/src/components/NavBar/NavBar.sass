@@ -1,0 +1,143 @@
+@import '@/assets/sass/global.sass'
+
+.navbar
+    display: flex
+    align-items: center
+    background-color: $nav              // #FBECC0
+    width: 100%
+    font-size: 20px
+    font-family: $main-ff               // Raleway
+    height: 80px
+    position: fixed
+    z-index: 5
+    .navbar-brand
+        img
+            width:134px
+            margin-top: -5px
+
+.nav-text
+    text-decoration: none
+    color: $main                        // #5B2601
+    padding-right: 55px
+    &:hover
+        color: $active                  // #CC5500
+
+.navbar-nav
+    display: flex
+    align-items: center
+
+.profile
+    position: fixed
+    right: 0
+    margin-right: 45px
+    border-radius: 5px
+    .user-pic
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        background-color: $bg           // #FFFAED
+        border: 2px solid $main         // #5B2601
+        margin-bottom: 0px
+
+
+.login
+    position: fixed
+    right: 0
+    text-decoration: none
+    color: $main                        // #5B2601
+    margin-right: 45px
+    border-radius: 5px
+    font-weight: normal
+    font-size: 20px
+    .login-icon
+        display: inline-flex
+        width: 28px
+        padding-bottom: 4px
+    .login-hover-icon
+        display: none
+    &:hover
+        color: $active                  // #CC5500
+        .login-icon
+            display: none
+        .login-hover-icon
+            display: inline-flex
+            width: 28px
+            padding-bottom: 4px
+
+.router-link-active
+    color: $active                      // #CC5500
+    font-weight: bold
+    .login-icon
+        display: none
+    .login-hover-icon
+        display: inline-flex
+        width: 30px
+        padding-bottom: 4px
+    &:hover
+        .login-hover-icon
+            width: 30px
+
+.disabled
+    color: darkgray
+    font-weight: normal
+    &:hover
+        color: darkgray
+
+img
+    width: 39px
+
+@media screen and ( max-width: 1280px )
+    .navbar
+        height: 70px
+
+    img
+        width: 33px
+
+@media screen and ( max-width: 990px )
+    .navbar
+        height: auto
+        font-size: 24px
+
+    .navbar-toggler
+        border: 0px solid $btn-text     // #E9BA16
+
+    .navbar-nav
+        align-items: flex-start
+        .link
+            padding-left: 16px
+            margin-bottom: 20px
+
+    .nav-text
+        padding: 0
+
+    .login
+        position: relative
+        background-color: transparent
+        color: $main                    // #5B2601
+        font-size: 24px
+        padding: 0
+        .login-icon
+            display: none
+        .login-mobile-icon
+            display: inline-flex
+
+    .router-link-active
+        color: $active                  // #CC5500
+
+    .disabled
+        color: darkgray
+        font-weight: normal
+        &:hover
+            color: darkgray
+
+    .profile
+        position: relative
+        background-color: transparent
+        padding: 0
+        .user-pic
+            width: 60px
+            height: 60px
+
+    
+    img
+        width: 39px

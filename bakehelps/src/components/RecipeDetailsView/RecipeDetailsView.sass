@@ -1,0 +1,118 @@
+@import '@/assets/sass/global.sass'
+
+.bg-burnt 
+  background-color: $active         // #CC5500
+
+.btn-brown
+  color: $bg                        // #FFFAED
+  background-color: $main           // #5B2601
+
+.badge
+    padding: 5px 10px
+    margin: 0px 5px
+
+@each $diets-colours, $colour in $diets-colours
+  .#{$diets-colours}
+    background-color: $colour
+    color: $main                    // #5B2601
+
+.bg-lacto-ovo-vegetarian
+  color: $bg !important             // #FFFAED
+
+.btn-outline-brown
+  border-color: $main !important    // #5B2601   
+
+.RecipeDetailsView
+    margin-top: 40px
+    width: 90%
+    margin-left: auto
+    margin-right: auto
+
+.btns
+  display: flex
+  justify-content: center
+
+.card-header
+    padding: 10px 0
+
+.card-title
+    margin: 0
+
+.serving-btn
+    display: inline-flex
+    margin: 0px 0px 10px 0px
+    .btn
+        font-size: 14px
+        padding: 0px 10px
+        padding-bottom: 2px
+        margin-right: 5px
+
+#details
+    color: $active                  // #CC5500
+    font-weight: bold
+
+#instructions_num
+    font-weight: bold
+    color: $active                  // #CC5500
+
+#vline
+    font-weight: bold
+    border-left: 2px solid $main    // #5B2601
+    height: 15px
+    margin-left: 5px
+
+#link 
+    border-radius: 25px
+    background-color: $main         // #5B2601
+    border: none
+    color: white
+    text-align: center
+    font-size: 18px
+    padding: 10px
+    width: 160px
+    transition: all 0.5s
+    cursor: pointer
+    margin: 5px
+
+#link span 
+    cursor: pointer
+    display: inline-block
+    position: relative
+    transition: 0.5s
+
+#link span:after 
+    content: '\00bb'
+    position: absolute
+    opacity: 0
+    transition: 0.5s
+
+#link:hover span 
+    padding-right: 15px
+
+#link:hover span:after 
+    opacity: 1
+    right: 0
+
+@media screen and ( max-width: 600px )
+    .RecipeDetailsView
+        margin-top: 60px
+
+    img
+        width: 100%
+
+    .recipeInfo
+        flex-direction: column
+        align-items: center
+        .card
+            max-width: 15rem !important
+            width: 100%
+            margin-right: 0px !important
+
+    .serving-btn
+        display: flex
+        margin: 5px 0 15px 0
+        .btn
+            font-size: 14px
+            padding: 0px 15px
+            padding-bottom: 2px
+            margin-right: 10px

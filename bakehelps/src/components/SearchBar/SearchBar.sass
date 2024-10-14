@@ -1,0 +1,54 @@
+@import '@/assets/sass/global.sass'
+
+.search-bar
+    width: 70%
+    margin-left: auto
+    margin-right: auto
+
+.search-tabs
+    background-color: transparent
+    border: 0px
+    padding: 0px
+    color: $main                    // #5B2601
+    font-weight: bold
+    font-size: 18px
+    margin-top: 50px
+    margin-bottom: 12px
+
+.dropdown-item
+  color: $main                      // #5B2601
+  font-size: 16px
+  &:hover
+    background-color: #ECD8CA !important
+    color: $active                  // #CC5500
+
+.recipes-tab, .ingredients
+    background-color: white
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 5px
+
+.form-control
+    border: 0px
+    height: 50px
+    font-size: 16px
+    padding: 20px
+
+.search-btn
+    background-color: transparent
+    border: 0px
+
+.search-icon
+    height: 40px
+
+p
+    margin: 0px
+    padding-top: 5px
+    font-size: 12px
+
+@media screen and ( max-width: 767px )
+    .search-bar
+        width: 90%
+
+@media screen and ( max-width: 325px )
+    .search-bar
+        width: 100%
